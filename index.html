@@ -1,0 +1,388 @@
+<!Doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>UpQode</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="stylesheets/main.css?v=1.0">
+        <link rel="stylesheet" href="stylesheets/media.css?v=1.0">
+
+		<!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <header>
+
+            <!--  Main menu  -->
+
+            <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1><a href="#">UP<span>QODE</span></a></h1>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="home active" data-id="slider" onclick="scrollTo(this)"><a>Home</a></li>
+                            <li class="dropdown products">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Pants</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#" class="second-dropdown">Shoes</a>
+                                        <ul id="second-level" class="dropdown-menu second-dropdown" role="menu">
+                                            <li><a href="#">Men shoes</a></li>
+                                            <li><a href="#">Women shoes</a></li>
+                                            <li><a href="#">Sports shoes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li class="about-us" data-id="about-us" onclick="scrollTo(this)"><a>About</a></li>
+                            <li class="contact" data-id="contact" onclick="scrollTo(this)"><a>Contact</a></li>
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                </div>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+            <!--  Slider  -->
+
+        <div id="slider">
+            <div class="container-fluid">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="sliderPhotos/sliderBG1.png" alt="picture">
+                            <div class="carousel-caption">
+                                <h2>CREATIVE <span>DESIGN AGENCY</span></h2>
+                                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="sliderPhotos/sliderBG2.png" alt="picture">
+                            <div class="carousel-caption">
+                                <h2>CREATIVE <span>DESIGN AGENCY</span></h2>
+                                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="sliderPhotos/sliderBG3.png" alt="picture">
+                            <div class="carousel-caption">
+                                <h2>CREATIVE <span>DESIGN AGENCY</span></h2>
+                                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  control  -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Попередній</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Наступний</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+            <!--  Content-page (first)  -->
+
+        <div id="products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <article>WHY <span>CHOOSE US</span></article>
+                        <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.
+                            Nullam at scelerisque tellus mattis volutpat rhoncus.</p>
+                    </div>
+                </div>
+            </div>
+
+                <!--  Information card with the use of flex-box and css animation -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card-block">
+                        <div class="block">
+                            <div class="item">
+                                <img src="img/heart.png" alt="picture">
+                            </div>
+                            <div class="vertical flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <article>YOUR TITLE</article>
+                                        <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                                    </div>
+                                    <div class="back">
+                                        <div><a href="#">SEE MORE</a></div>
+                                        <div>
+                                            <img src="img/elipse.png" alt="...">
+                                            <img src="img/elipse1.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="item">
+                                <img src="img/blog.png" alt="picture">
+                            </div>
+                            <div class="vertical flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <article>YOUR TITLE</article>
+                                        <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                                    </div>
+                                    <div class="back">
+                                        <div><a href="#">SEE MORE</a></div>
+                                        <div>
+                                            <img src="img/elipse.png" alt="...">
+                                            <img src="img/elipse1.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="item">
+                                <img src="img/netbook.png" alt="picture">
+                            </div>
+                            <div class="vertical flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <article>YOUR TITLE</article>
+                                        <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                                    </div>
+                                    <div class="back">
+                                        <div><a href="#">SEE MORE</a></div>
+                                        <div>
+                                            <img src="img/elipse.png" alt="...">
+                                            <img src="img/elipse1.png" alt="...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="item">
+                                <img src="img/star.png" alt="picture">
+                            </div>
+                            <div class="vertical flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <article>YOUR TITLE</article>
+                                        <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                                    </div>
+                                    <div class="back">
+                                        <div><a href="#">SEE MORE</a></div>
+                                        <div>
+                                            <img src="img/elipse.png" alt="...">
+                                            <img src="img/elipse1.png" alt="...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="item">
+                                <img src="img/flag.png" alt="picture">
+                            </div>
+                            <div class="vertical flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <article>YOUR TITLE</article>
+                                        <p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
+                                    </div>
+                                    <div class="back">
+                                        <div><a href="#">SEE MORE</a></div>
+                                        <div>
+                                            <img src="img/elipse.png" alt="...">
+                                            <img src="img/elipse1.png" alt="...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!--  Content-page (second) -->
+
+        <div id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="info">
+                            <article><span>ABOUT</span> US</article>
+                            <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism
+                                Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+
+                            <p>Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula scelerisque a.
+                                Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut volutpat.
+                                Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id semper. Pellentesque ac posuere augue,
+                                vitae mollis enim. Etiam et ullamcorper dolor, a hendrerit quam. </p>
+                        </div>
+                        <div class="skills">
+                            <div class="photoshop-skill">
+                                <div>
+                                    <b>PHOTOSHOP</b>
+                                    <b class="interest"></b>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="loading"></div>
+                                </div>
+                            </div>
+                            <div class="html-css-skill">
+                                <div>
+                                    <b>HTML/CSS</b>
+                                    <b class="interest"></b>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="loading"></div>
+                                </div>
+                            </div>
+                            <div class="javascript-skill">
+                                <div>
+                                    <b>JAVASCRIPT</b>
+                                    <b class="interest"></b>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="loading"></div>
+                                </div>
+                            </div>
+                            <div class="wordpress-skill">
+                                <div>
+                                    <b>WORDPRESS</b>
+                                    <b class="interest"></b>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="loading"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="ipad">
+                            <img src="img/ipad.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12">
+                        <div class="footer">
+                            <article>GET IN <span>TOUCH</span></article>
+                            <p>Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh,
+                                ut euismod quam nisi quis felis.
+                                Nullam at scelerisque tellus mattis volutpat rhoncus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--  Contact information and  post form -->
+
+        <footer>
+            <div id="contact">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="shadow">
+                            <div class="form">
+                                <div class="col-md-8">
+                                    <form action="#" method="post">
+                                        <input type="text" required placeholder="Full Name">
+                                        <input type="text" required placeholder="E-mail Address" list="mails">
+                                        <datalist id="mails">
+                                            <option value="somename@mail.com">
+                                            <option value="name@mail.com">
+                                            <option value="yourname@mail.com">
+                                        </datalist>
+                                        <textarea name="message" required rows="25" cols="80" placeholder="Message"></textarea><br>
+                                        <input type="checkbox">
+                                        <label>I like your company</label>
+                                        <button type="submit" >Submit</button>
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class=" contact-info">
+                                        <p>69/A, Some Street Name
+                                            Your City, code 01234
+                                            Country Name
+                                        </p>
+                                        <p>
+                                            +880 123 456 78 98<br>
+                                            +860 987 648 74 95
+                                        </p>
+                                        <p>
+                                            <a>company@mail.com</a>
+                                            <a>sales@mail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google map for background  -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2164.402420322124!2d24.00304328861961!3d49.82511694136157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1492602662929" width="1600" height="635" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <div class="footer row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="copyright">
+                                <P>Copyright © Company. All Rights Reserved  2016</P>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="social-links">
+                                <a href="#"><img src="img/facebook.png"></a>
+                                <a href="#"><img src="img/googleplus.png"></a>
+                                <a href="#"><img src="img/twitter.png"></a>
+                                <a href="#"><img src="img/dribbble.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="js/scripts.js"></script>
+
+    </body>
+
+</html>

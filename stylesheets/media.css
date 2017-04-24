@@ -1,0 +1,166 @@
+/*  Media styles  */
+@media only screen and (max-width: 1024px) {
+  /*  Overwrite bootstrap style for "burger-menu"  appear<1024px  */
+  /* line 8, ../sass/media.scss */
+  .navbar-header {
+    float: none;
+  }
+
+  /* line 11, ../sass/media.scss */
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+
+  /* line 14, ../sass/media.scss */
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* line 17, ../sass/media.scss */
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 21, ../sass/media.scss */
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+
+  /* line 25, ../sass/media.scss */
+  .navbar-right {
+    margin-right: 0px;
+  }
+
+  /* line 26, ../sass/media.scss */
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  /* line 29, ../sass/media.scss */
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+
+  /* line 33, ../sass/media.scss */
+  .navbar-nav > li {
+    float: none;
+  }
+
+  /* line 36, ../sass/media.scss */
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* line 40, ../sass/media.scss */
+  .collapse.in {
+    display: block !important;
+  }
+
+  /* ... */
+  /*  Herader  */
+  /* line 51, ../sass/media.scss */
+  header nav.navbar .navbar-header h1 {
+    margin-left: 5px;
+  }
+  /* line 53, ../sass/media.scss */
+  header nav.navbar .navbar-toggle {
+    margin-top: 18px;
+    margin-right: 5px;
+  }
+  /* line 55, ../sass/media.scss */
+  header nav.navbar .navbar-form .form-group {
+    width: 100%;
+  }
+  /* line 57, ../sass/media.scss */
+  header nav.navbar div.form-group input.form-control {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  /* line 63, ../sass/media.scss */
+  header nav.navbar ul.nav.navbar-nav {
+    border: 1px solid #e7e7e7;
+  }
+  /* line 66, ../sass/media.scss */
+  header nav.navbar ul.nav.navbar-nav ul.dropdown-menu {
+    width: 100%;
+    margin: 0;
+    padding-left: 40px;
+    background-color: #fff;
+  }
+
+  /*  Slider  */
+  /* line 80, ../sass/media.scss */
+  #slider .carousel-inner > .item > img {
+    height: auto;
+    min-height: 400px;
+  }
+
+  /* line 84, ../sass/media.scss */
+  #slider .carousel-caption {
+    bottom: 20px;
+  }
+  /* line 86, ../sass/media.scss */
+  #slider .carousel-caption h2 {
+    font: 46px Lato Bold;
+  }
+
+  /*  Footer  */
+  /* line 94, ../sass/media.scss */
+  #contact .form {
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+  }
+  /* line 100, ../sass/media.scss */
+  #contact .form form button {
+    margin-left: 100px;
+  }
+  /* line 105, ../sass/media.scss */
+  #contact .contact-info {
+    margin-top: 30px;
+  }
+  /* line 109, ../sass/media.scss */
+  #contact .footer {
+    height: 100%;
+    padding: 5px;
+  }
+  /* line 113, ../sass/media.scss */
+  #contact .footer .social-links {
+    text-align: center;
+  }
+  /* line 114, ../sass/media.scss */
+  #contact .footer .copyright {
+    text-align: center;
+  }
+
+  /*  Content-page (second)  */
+  /* line 121, ../sass/media.scss */
+  #about-us {
+    margin-top: 50px;
+  }
+  /* line 124, ../sass/media.scss */
+  #about-us .ipad {
+    text-align: center;
+  }
+  /* line 125, ../sass/media.scss */
+  #about-us .footer {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 135, ../sass/media.scss */
+  .navbar-right {
+    margin-right: -15px;
+  }
+
+  /* line 137, ../sass/media.scss */
+  #contact .form form button {
+    margin-left: 10px;
+  }
+}
